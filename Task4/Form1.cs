@@ -9,8 +9,7 @@ namespace Task4
         {
             InitializeComponent();
 
-            LisViewProcc.myColumns();
-            LisViewProcc.SetListProc();
+            UpdateListView();
 
             LisViewProcc.MouseClick += listView_Click;
         }
@@ -61,7 +60,8 @@ namespace Task4
 
         private void UpdateListView()
         {
-            LisViewProcc.RemoveListProc();
+            LisViewProcc.Clear();
+            LisViewProcc.myColumns();
             LisViewProcc.SetListProc();
         }
     }

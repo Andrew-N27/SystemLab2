@@ -171,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1189, 663);
             this.Controls.Add(this.tbUpDown);
             this.Controls.Add(this.btnUpdateListView);
@@ -183,6 +184,7 @@
             this.Controls.Add(this.btnPaint);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnNotepad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

@@ -26,14 +26,6 @@ namespace Task4
             myProcess.GetMyProc(ref LisViewProcc);
         }
 
-        public static void RemoveListProc(this ListView LisViewProcc)
-        {
-            foreach(ListViewItem item in LisViewProcc.Items)
-            {
-                LisViewProcc.Items.Remove(item);
-            }
-        }
-
         public static List<int> GetSelectedListId(this ListView LisViewProcc)
         {
             List<int> LisProcId = new List<int>();
