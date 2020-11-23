@@ -51,7 +51,7 @@ namespace Task4
 
         private void btnTimeUp_Click(object sender, EventArgs e)
         {
-            timer1.Interval = Convert.ToInt32(dUpDown.Text) * 1000;
+            timer1.Interval = Convert.ToInt32(tbUpDown.Text) * 1000;
         }
 
         private void btnUpdateListView_Click(object sender, EventArgs e)

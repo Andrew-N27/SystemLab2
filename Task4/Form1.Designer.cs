@@ -38,9 +38,9 @@
             this.btnStopProc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dUpDown = new System.Windows.Forms.DomainUpDown();
             this.btnTimeUp = new System.Windows.Forms.Button();
             this.btnUpdateListView = new System.Windows.Forms.Button();
+            this.tbUpDown = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnNotepad
@@ -135,16 +135,6 @@
             this.timer1.Interval = 15000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // dUpDown
-            // 
-            this.dUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dUpDown.Location = new System.Drawing.Point(799, 12);
-            this.dUpDown.Name = "dUpDown";
-            this.dUpDown.Size = new System.Drawing.Size(160, 29);
-            this.dUpDown.TabIndex = 8;
-            this.dUpDown.Text = "15";
-            this.dUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnTimeUp
             // 
             this.btnTimeUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -167,14 +157,24 @@
             this.btnUpdateListView.UseVisualStyleBackColor = true;
             this.btnUpdateListView.Click += new System.EventHandler(this.btnUpdateListView_Click);
             // 
+            // tbUpDown
+            // 
+            this.tbUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbUpDown.Location = new System.Drawing.Point(800, 13);
+            this.tbUpDown.Name = "tbUpDown";
+            this.tbUpDown.Size = new System.Drawing.Size(159, 26);
+            this.tbUpDown.TabIndex = 11;
+            this.tbUpDown.Text = "15";
+            this.tbUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 663);
+            this.Controls.Add(this.tbUpDown);
             this.Controls.Add(this.btnUpdateListView);
             this.Controls.Add(this.btnTimeUp);
-            this.Controls.Add(this.dUpDown);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStopProc);
             this.Controls.Add(this.LisViewProcc);
@@ -201,9 +201,9 @@
         protected System.Windows.Forms.ListView LisViewProcc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DomainUpDown dUpDown;
         private System.Windows.Forms.Button btnTimeUp;
         private System.Windows.Forms.Button btnUpdateListView;
+        private System.Windows.Forms.TextBox tbUpDown;
     }
 }
 
